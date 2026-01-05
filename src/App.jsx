@@ -210,46 +210,37 @@ function App() {
       {/* About Section */}
       <section className="section about-section">
         <div className="section-content">
-          <div className="content-grid">
-            <div className="content-text">
-              <h2 className="section-title">Hakkımızda</h2>
-              <p className="section-description">
-                Her hasta, yalnızca bir vaka değil; bizim için bir aile üyesidir.
-              </p>
-              <p className="section-description" style={{marginTop: '2rem'}}>
-                Sevginin var olduğu her yeri güzelleştireceği inancıyla her gün "katlanan sevgiyle" 
-                ve canlıya duyulan "saygıyla" 2013'ten bu yana sever adım ilerliyoruz.
-              </p>
-              <div className="feature-list">
-                <div className="feature-item">
-                  <div className="feature-content">
-                    <span className="feature-title">İleri Teknoloji</span>
-                    <span className="feature-text">Son teknoloji cihazlarla donatılmış tanı ve tedavi ünitelerimizde; ultrasonografi, laboratuvar analizleri ve görüntüleme sistemleriyle doğru tanıyı en kısa sürede koyuyoruz.</span>
-                  </div>
-                </div>
-                <div className="feature-item">
-                  <div className="feature-content">
-                    <span className="feature-title">Uzman Kadro</span>
-                    <span className="feature-text">Alanında deneyimli veteriner hekimlerimiz ve teknik ekibimiz, sürekli eğitimlerle kendini geliştiren bir yapının parçasıdır. Her biri, sevgiyle ve bilimle hizmet verir.</span>
-                  </div>
-                </div>
-                <div className="feature-item">
-                  <div className="feature-content">
-                    <span className="feature-title">Hijyen ve Güven</span>
-                    <span className="feature-text">Kliniğimizde hijyen standartları, uluslararası protokollere göre titizlikle uygulanır. Steril muayene alanlarımız ve yoğun bakım ünitelerimiz, dostlarımız için maksimum güvenliği sağlar.</span>
-                  </div>
-                </div>
+          <h2 className="section-title">Hakkımızda</h2>
+          <p className="section-description">
+            Her hasta, yalnızca bir vaka değil; bizim için bir aile üyesidir.
+          </p>
+          <p className="section-description" style={{marginTop: '2rem'}}>
+            Sevginin var olduğu her yeri güzelleştireceği inancıyla her gün "katlanan sevgiyle" 
+            ve canlıya duyulan "saygıyla" 2013'ten bu yana sever adım ilerliyoruz.
+          </p>
+          
+          <div className="clinic-motto">
+            <div className="motto-text">"Bilimle, sevgiyle, güvenle…"</div>
+            <div className="motto-desc">Her adımda sağlığı, konforu ve güveni ön planda tutuyoruz</div>
+          </div>
+
+          <div className="feature-list">
+            <div className="feature-item">
+              <div className="feature-content">
+                <span className="feature-title">İleri Teknoloji</span>
+                <span className="feature-text">Son teknoloji cihazlarla donatılmış tanı ve tedavi ünitelerimizde; ultrasonografi, laboratuvar analizleri ve görüntüleme sistemleriyle doğru tanıyı en kısa sürede koyuyoruz.</span>
               </div>
             </div>
-            <div className="content-visual">
-              <div className="visual-element">
-                <div className="visual-text">Başarı ve Güvenilirlik</div>
-                <div className="visual-subtext">Yıllardır binlerce hastada elde ettiğimiz yüksek başarı oranı, bizi sadece bir klinik değil, güvenin adresi haline getirdi.</div>
-                <div className="clinic-motto">
-                  <div className="motto-title">Florya Doğa Veteriner Polikliniği</div>
-                  <div className="motto-text">"Bilimle, sevgiyle, güvenle…"</div>
-                  <div className="motto-desc">Her adımda sağlığı, konforu ve güveni ön planda tutuyoruz</div>
-                </div>
+            <div className="feature-item">
+              <div className="feature-content">
+                <span className="feature-title">Uzman Kadro</span>
+                <span className="feature-text">Alanında deneyimli veteriner hekimlerimiz ve teknik ekibimiz, sürekli eğitimlerle kendini geliştiren bir yapının parçasıdır. Her biri, sevgiyle ve bilimle hizmet verir.</span>
+              </div>
+            </div>
+            <div className="feature-item">
+              <div className="feature-content">
+                <span className="feature-title">Hijyen ve Güven</span>
+                <span className="feature-text">Kliniğimizde hijyen standartları, uluslararası protokollere göre titizlikle uygulanır. Steril muayene alanlarımız ve yoğun bakım ünitelerimiz, dostlarımız için maksimum güvenliği sağlar. Yıllardır binlerce hastada elde ettiğimiz yüksek başarı oranı, bizi sadece bir klinik değil, güvenin adresi haline getirdi.</span>
               </div>
             </div>
           </div>
@@ -262,6 +253,13 @@ function App() {
           <div className="vision-layout">
             <div className="vision-main">
               <h2 className="section-title">Vizyonumuz</h2>
+              <div className="vision-values">
+                <span className="value-text">Sevgi ve özen</span>
+                <span className="value-separator">|</span>
+                <span className="value-text">Canlıya saygı</span>
+                <span className="value-separator">|</span>
+                <span className="value-text">Yaşam kalitesi</span>
+              </div>
               <p className="vision-text">
                 Sevginin var olduğu her yeri güzelleştireceği inancıyla, canlıya duyulan 
                 saygı ve sevgiyle dostlarımızın yaşam kalitesini en üst seviyeye çıkarmak.
@@ -269,23 +267,6 @@ function App() {
               <p className="vision-text" style={{marginTop: '2rem', fontSize: '1.1rem', fontStyle: 'italic'}}>
                 "Sevgi, mutluluk paylaştıkça çoğalır, sevginizi mutluluğunuzu paylaşıyoruz."
               </p>
-              <p className="vision-text" style={{marginTop: '2rem', fontSize: '1rem', color: 'var(--accent)', fontWeight: '400'}}>
-                Her hasta, yalnızca bir vaka değil; bizim için bir aile üyesidir.
-              </p>
-            </div>
-            <div className="vision-values">
-              <div className="value-item">
-                <span className="value-icon">◦</span>
-                <span className="value-text">Sevgi ve özen</span>
-              </div>
-              <div className="value-item">
-                <span className="value-icon">◦</span>
-                <span className="value-text">Canlıya saygı</span>
-              </div>
-              <div className="value-item">
-                <span className="value-icon">◦</span>
-                <span className="value-text">Yaşam kalitesi</span>
-              </div>
             </div>
           </div>
         </div>
@@ -295,31 +276,28 @@ function App() {
       <section className="section clinic-section">
         <div className="section-content">
           <h2 className="section-title">Polikliniğimiz</h2>
-          <div className="clinic-grid">
-            <div className="clinic-info">
-              <p className="clinic-description">
-                Şenlikköy Mahallesi'nde modern mimarisi ve steril ortamı ile 
-                hizmet veren polikliniğimiz, evcil dostlarınız için en konforlu 
-                tedavi ortamını sunmaktadır.
-              </p>
+          <p className="section-description">
+            Şenlikköy Mahallesi'nde modern mimarisi ve steril ortamı ile 
+            hizmet veren polikliniğimiz, evcil dostlarınız için en konforlu 
+            tedavi ortamını sunmaktadır.
+          </p>
+          <div className="clinic-features-grid">
+            <div className="clinic-features-row">
+              <span className="feature-name">Ameliyathane</span>
+              <span className="feature-separator">|</span>
+              <span className="feature-name">Laboratuvar</span>
+              <span className="feature-separator">|</span>
+              <span className="feature-name">Röntgen Ünitesi</span>
             </div>
-            <div className="clinic-features">
-              <div className="clinic-feature">
-                <span className="feature-name">Ameliyathane</span>
-                <span className="feature-desc">Steril cerrahi ortam</span>
-              </div>
-              <div className="clinic-feature">
-                <span className="feature-name">Laboratuvar</span>
-                <span className="feature-desc">Hızlı tanı imkanları</span>
-              </div>
-              <div className="clinic-feature">
-                <span className="feature-name">Röntgen Ünitesi</span>
-                <span className="feature-desc">Görüntüleme sistemi</span>
-              </div>
-              <div className="clinic-feature">
-                <span className="feature-name">Yatar Hasta</span>
-                <span className="feature-desc">24 saat bakım</span>
-              </div>
+            <div className="clinic-features-row">
+              <span className="feature-name">Ultrason</span>
+              <span className="feature-separator">|</span>
+              <span className="feature-name">Endoskopi</span>
+              <span className="feature-separator">|</span>
+              <span className="feature-name">Yoğun Bakım</span>
+            </div>
+            <div className="clinic-features-row">
+              <span className="feature-name">Kuaför</span>
             </div>
           </div>
         </div>

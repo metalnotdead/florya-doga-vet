@@ -207,6 +207,8 @@ body {
   line-height: 1.7;
   max-width: 600px;
   font-weight: 300;
+  text-align: center;
+  margin: 0 auto;
 }
 
 /* Hero Section - Full Screen Landing */
@@ -359,20 +361,42 @@ body {
 /* About Section */
 .about-section {
   background: var(--white);
+  text-align: center;
 }
 
-.content-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 6rem;
-  align-items: center;
+.about-section .section-content {
+  max-width: 1000px;
+}
+
+.clinic-motto {
+  margin: 4rem auto 4rem auto;
+  padding: 2rem;
+  max-width: 600px;
+}
+
+.motto-text {
+  font-size: 1.8rem;
+  font-style: italic;
+  color: var(--accent);
+  margin-bottom: 1rem;
+  font-weight: 300;
+}
+
+.motto-desc {
+  font-size: 1.1rem;
+  color: var(--text-secondary);
+  font-weight: 300;
+  line-height: 1.6;
 }
 
 .feature-list {
-  margin-top: 3rem;
+  margin-top: 4rem;
   display: flex;
   flex-direction: column;
   gap: 3rem;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .feature-item {
@@ -381,6 +405,7 @@ body {
   gap: 0;
   padding-left: 1.5rem;
   border-left: 3px solid var(--accent);
+  text-align: left;
 }
 
 .feature-icon {
@@ -468,13 +493,22 @@ body {
 /* Vision Section */
 .vision-section {
   background: var(--light);
+  text-align: center;
+}
+
+.vision-section .section-content {
+  max-width: 800px;
 }
 
 .vision-layout {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  gap: 6rem;
-  align-items: start;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+}
+
+.vision-main {
+  max-width: 700px;
 }
 
 .vision-text {
@@ -482,69 +516,60 @@ body {
   color: var(--text-secondary);
   line-height: 1.7;
   font-weight: 300;
+  text-align: center;
 }
 
 .vision-values {
   display: flex;
-  flex-direction: column;
-  gap: 2rem;
-  margin-top: 2rem;
-}
-
-.value-item {
-  display: flex;
   align-items: center;
-  gap: 1.5rem;
-}
-
-.value-icon {
-  color: var(--accent);
-  font-size: 1.2rem;
+  justify-content: center;
+  gap: 2rem;
+  margin: 2rem 0 4rem 0;
 }
 
 .value-text {
-  font-size: 1rem;
-  color: var(--text-secondary);
-  font-weight: 300;
+  font-size: 1.1rem;
+  color: var(--accent);
+  font-weight: 400;
+}
+
+.value-separator {
+  color: var(--text-light);
+  font-weight: 200;
 }
 
 /* Clinic Section */
 .clinic-section {
   background: var(--white);
+  text-align: center;
 }
 
-.clinic-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 6rem;
-  align-items: start;
-}
-
-.clinic-description {
-  font-size: 1.2rem;
-  color: var(--text-secondary);
-  line-height: 1.7;
-  font-weight: 300;
-}
-
-.clinic-features {
+.clinic-features-grid {
   display: flex;
   flex-direction: column;
   gap: 2rem;
+  margin-top: 3rem;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.clinic-feature {
+.clinic-features-row {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  padding: 1.5rem 0;
-  border-bottom: 1px solid var(--border);
+  justify-content: center;
+  gap: 2rem;
 }
 
 .feature-name {
   font-size: 1.1rem;
-  color: var(--text-primary);
-  font-weight: 300;
+  color: var(--accent);
+  font-weight: 400;
+}
+
+.feature-separator {
+  color: var(--text-light);
+  font-weight: 200;
 }
 
 .feature-desc {
@@ -760,6 +785,7 @@ body {
 .social-links {
   display: flex;
   gap: 2rem;
+  justify-content: center;
 }
 
 .social-link {
